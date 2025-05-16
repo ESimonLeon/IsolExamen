@@ -55,7 +55,10 @@ fun MainActivity.notificationAdapterInsert(plpState: ProductResults.ProductResul
 
 
 fun MainActivity.setProductsList(records: ArrayList<ProductResults.ProductResultsRecords>) {
-    if (records.isEmpty()) return
+    if (records.isEmpty()) {
+        loadEmptyList()
+        return
+    }
     productsListArray.addAll(records)
 }
 
