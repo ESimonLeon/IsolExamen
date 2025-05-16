@@ -31,8 +31,6 @@ fun MainActivity.loadViewSuccess(serviceResult: ServiceResult.ServiceSuccess) =
             this ?: loadEmptyList()
             this ?: return@with
 
-            loadNotEmptyList()
-
             loadTotalPages(this)
 
             notificationAdapterInsert(this)
@@ -59,6 +57,9 @@ fun MainActivity.setProductsList(records: ArrayList<ProductResults.ProductResult
         loadEmptyList()
         return
     }
+
+    loadNotEmptyList()
+
     productsListArray.addAll(records)
 }
 
