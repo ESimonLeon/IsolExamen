@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:contentDescription="@string/content_description_search"
+        android:title="@string/search"
+        android:icon="@drawable/id_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/filter"
+        android:contentDescription="@string/content_description_filter"
+        android:icon="@drawable/baseline_filter_list_24"
+        android:title="@string/filter"
+        app:showAsAction="ifRoom|collapseActionView">
+
+        <menu>
+            <item
+                android:id="@+id/action_default"
+                android:title="@string/menu_default" />
+            <item
+                android:id="@+id/action_min"
+                android:title="@string/menu_min_price" />
+
+            <item
+                android:id="@+id/action_max"
+                android:title="@string/menu_max_price" />
+        </menu>
+
+    </item>
+
+</menu>

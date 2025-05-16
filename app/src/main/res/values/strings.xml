@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ExamenIsol</string>
+    <string name="empty_list_products">Lista de productos vacía</string>
+    <string name="image_product">image product</string>
+    <string name="content_description_filter">filtro</string>
+    <string name="filter">filtrar</string>
+    <string name="search">buscar</string>
+    <string name="content_description_search">buscador</string>
+    <string name="price_product">$%1$s</string>
+    <string name="name_product_dummy">Nombre producto</string>
+    <string name="menu_default">Default</string>
+    <string name="menu_min_price">Menor precio</string>
+    <string name="menu_max_price">Mayor precio</string>
+    <string name="title_products">Productos</string>
+</resources>
